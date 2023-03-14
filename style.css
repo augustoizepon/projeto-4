@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Golos Text', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: aliceblue;
+}
+
+.header {
+    background-color: rgba(17, 42, 66, 0.419);
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    position: fixed;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 998px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 70px;
+    margin-top: 22px;
+    padding-right: 25px;
+    margin-right: 60px;
+}
+
+
+.nav {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+.nav-button {
+    text-align: center;
+    font-size: 15px;
+    background-color: transparent;
+    border-color: transparent;
+    color:#89c7e3;
+    letter-spacing: 1px;
+    padding: 22px 10px;
+    transition: ease 0.6s;
+    width: 190px;
+    font-weight: 800;
+}
+
+.button-stores {
+    width: 100px;
+}
+
+.nav-button:hover {
+    box-shadow: 190px 0 0 0 inset rgba(240, 248, 255, 0.8);
+    color: #002951;
+
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100vw;
+    background:linear-gradient(aliceblue 1200px,#89c7e3);
+}
+
+.msg-from-us {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 10;
+    text-align: center;
+    color: #002451;
+    font-family: 'Golos Text', sans-serif;
+    font-size: 40px;
+    margin: 0 20px;
+    letter-spacing: 2px;
+}
+
+.img-intro {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+img {
+    margin: 0px;
+    padding: 0;
+}
+
+.msg-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 10px;
+    padding: 0px;
+    justify-content: center;
+}
+
+.msg {
+    width: 800px;
+    height: 600px;
+    border-right: 5px aliceblue;
+    justify-content: center;
+    align-items: center;
+}
+
+.msg1 {
+    background-color: #002851;
+    border-top-right-radius: 50px;
+}
+
+.pct1 {
+    border-bottom-left-radius: 50px;
+
+}
+
+#img-sunglasses {
+    border-bottom-right-radius: 50px;
+}
+
+.msg2 {
+    background-color: #fe835e;
+
+    border-top-left-radius: 50px;
+}
+
+#child-sunglasses {
+    border-top-left-radius: 50px;
+}
+
+.msg3 {
+    background-color: #002851;
+    border-bottom-right-radius: 50px;
+}
+
+#img-eyeglasses {
+    border-bottom-right-radius: 50px;
+}
+
+h2 {
+    width: 600px;
+    margin: 80px 30px 20px 40px;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+h4 {
+    width: 600px;
+    margin-left: 40px;
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 800;
+}
+
+#msg-top-title,
+#msg-top-content {
+    color: #89c7e3;
+}
+
+#msg-mid-title,
+#msg-mid-content {
+    color: #002851;
+
+}
+
+#msg-bottom-title,
+#msg-bottom-content {
+    color: #fe835e;
+}
+
+.stores-container{
+    
+    padding-bottom: 100px;
+}
+
+.iframe-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    margin: 10px 30px;
+    border: 15px;
+    border-radius: 40px;
+}
+
+#iframe-virtus-olinda-maploc {
+    border-style: solid;
+    border-color: #002451;
+}
+
+#iframe-virtus-recife-maploc {
+    border-style: solid;
+    border-color: #fe835e;
+}
+.iframe-names{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.iframe-names-content{
+    width: 550px;
+    text-align: center;
+    margin: 0px 30px;
+    border-radius: 20px;
+    padding: 0 0 50px 0;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.iframe-names-div-recife{
+    background-color: #002451;
+}
+
+.iframe-names-div-olinda{
+    background-color: #fe835e;
+}
+
+
+h3{
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+}
+a{
+    text-decoration: none;
+}
+
+#iframe-name-recife{
+    color:#fe835e;
+}
+
+#iframe-name-olinda{
+    color:#002451;
+}
+
+aside {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+
+}
+
+.aside-container {
+    display: flex;
+}
+
+.contact {
+    margin: 5px;
+}
+
+
+
+
+@media (min-width: 1600px) {
+    .logo {
+        margin-right: 300px;
+    }
+
+    .msg {
+        width: 1000px;
+    }
+
+}
+
+@media (min-width: 2020px) {
+    .logo {
+        margin-right: 800px;
+    }
+
+    .msg {
+        width: 1200px;
+    }
+
+}
