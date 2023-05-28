@@ -1,307 +1,538 @@
 * {
     box-sizing: border-box;
-    font-family: 'Golos Text', sans-serif;
+    font-family: 'Golos Text', sans-serif
 }
 
 body {
-    margin: 0;
-    background-color: aliceblue;
+    background-color: #f0f8ff;
+    margin: 0
 }
 
 .header {
-    background-color: rgba(17, 42, 66, 0.419);
-    height: 70px;
-    justify-content: center;
     align-items: center;
     display: flex;
-    width: 100%;
+    height: 80px;
+    justify-content: center;
+    overflow-x: none;
+    padding-top: 20px;
     position: fixed;
+    top: 20px;
+    width: 100%
 }
 
-.header-container {
+.header-message-content {
+    background-color: #000;
     display: flex;
     flex-direction: row;
+    height: 20px;
     justify-content: space-between;
-    width: 998px;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
+    overflow-x: none;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+p,
+p * {
+    color: #fff;
+    font-size: 14px;
+    height: 20px;
+    margin: 0;
+    text-align: center
+}
+
+.link-header-message {
+    text-decoration: underline
 }
 
 .logo {
-    height: 70px;
-    margin-top: 22px;
-    padding-right: 25px;
-    margin-right: 60px;
+    background-image: url(./img/logo-img.png);
+    background-size: cover;
+    height: 40px;
+    left: 40px;
+    position: absolute;
+    top: 20px;
+    width: 200px
 }
 
+ul {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding-inline-end: 20px;
+    padding-inline-start: 20px
+}
+
+.nav-list {
+    left: 240px;
+    position: absolute;
+    top: 25px;
+    width: fit-content
+}
+
+.nav-button {
+    background-color: transparent;
+    border-color: transparent;
+    color: #002951;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 1000;
+    height: 20px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    margin: 0;
+    text-align: center;
+    text-transform: capitalize;
+    top: 0
+}
 
 .nav {
     display: flex;
     flex-direction: row;
-
+    top: 0;
+    transition: ease .6s
 }
 
+.header:hover .logo {
+    background-image: url(./img/logo-img-hover.png)
+}
 
-ul {
+.nav-links {
     display: flex;
     flex-direction: row;
-    margin-right: 20px;
+    gap: 8px;
+    position: absolute;
+    right: 40px;
+    top: 25px
 }
 
-.nav-button {
-    text-align: center;
-    font-size: 15px;
+.nav-link-buttons,
+.nav-link-buttons a {
     background-color: transparent;
-    border-color: transparent;
-    color:#89c7e3;
-    letter-spacing: 1px;
-    padding: 22px 10px;
-    transition: ease 0.6s;
-    width: 190px;
-    font-weight: 800;
+    border: 0;
+    margin: 0;
+    padding: 0
 }
 
-.button-stores {
-    width: 100px;
+.svg-nav-links path {
+    stroke: #002951
 }
 
-.nav-button:hover {
-    box-shadow: 190px 0 0 0 inset rgba(240, 248, 255, 0.8);
-    color: #002951;
+.header:hover .svg-nav-links path {
+    stroke: #fff
+}
 
+h6 {
+    background-color: #002951;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    color: #fe835e;
+    content: "MENU";
+    font-size: 20px;
+    height: 60px;
+    margin: 0;
+    padding: 20px
 }
 
 main {
-    margin: 0;
-    padding: 0;
     justify-content: center;
+    margin: 0;
+    padding-top: 20px
 }
 
 .container {
+    background: linear-gradient(aliceblue 1200px, #89c7e3);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 100vw;
-    background:linear-gradient(aliceblue 1200px,#89c7e3);
+    max-width: 100vw
 }
 
 .msg-from-us {
-    margin: 20px 0px;
+    align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    margin: 0
+}
+
+pre {
+    color: #002451;
+    display: flex;
+    flex-direction: row;
+    font-size: 40px;
+    letter-spacing: 5px;
+    margin: 30px auto 0;
+    text-transform: lowercase
 }
 
 h1 {
-    font-weight: 10;
-    text-align: center;
     color: #002451;
     font-family: 'Golos Text', sans-serif;
     font-size: 40px;
+    font-weight: 10;
+    letter-spacing: 55px;
     margin: 0 20px;
-    letter-spacing: 2px;
+    text-align: center;
+    text-transform: lowercase
 }
 
 .img-intro {
+    border: 0;
     margin: 0;
     padding: 0;
-    border: 0;
+    width: 100%
+}
+
+#img-intro-image {
+    width: 100%
 }
 
 img {
-    margin: 0px;
-    padding: 0;
+    margin: 0;
+    padding: 0
 }
 
 .msg-container {
     display: flex;
     flex-direction: row;
-    margin: 0px 10px;
-    padding: 0px;
+    flex-wrap: wrap-reverse;
     justify-content: center;
+    margin: 0 10px;
+    padding: 0
 }
 
 .msg {
-    width: 800px;
-    height: 600px;
-    border-right: 5px aliceblue;
-    justify-content: center;
     align-items: center;
+    border-right: 5px #f0f8ff;
+    height: 600px;
+    justify-content: center;
+    width: 800px
 }
 
 .msg1 {
     background-color: #002851;
-    border-top-right-radius: 50px;
+    border-top-right-radius: 50px
 }
 
 .pct1 {
-    border-bottom-left-radius: 50px;
-
+    border-bottom-left-radius: 50px
 }
 
-#img-sunglasses {
-    border-bottom-right-radius: 50px;
+.pct1 .pct2 .pct3 {
+    height: fit-content;
+    width: fit-content
 }
 
 .msg2 {
     background-color: #fe835e;
-
-    border-top-left-radius: 50px;
+    border-top-left-radius: 50px
 }
 
 #child-sunglasses {
-    border-top-left-radius: 50px;
+    border-top-left-radius: 50px
 }
 
 .msg3 {
     background-color: #002851;
-    border-bottom-right-radius: 50px;
-}
-
-#img-eyeglasses {
-    border-bottom-right-radius: 50px;
+    border-bottom-right-radius: 50px
 }
 
 h2 {
-    width: 600px;
-    margin: 80px 30px 20px 40px;
     font-size: 50px;
     font-weight: 800;
+    margin: 80px 30px 20px 40px;
+    width: 600px
 }
 
 h4 {
-    width: 600px;
-    margin-left: 40px;
     font-size: 30px;
-    line-height: 50px;
     font-weight: 800;
+    line-height: 50px;
+    margin-left: 40px;
+    width: 600px
 }
 
 #msg-top-title,
 #msg-top-content {
-    color: #89c7e3;
+    color: #89c7e3
 }
 
 #msg-mid-title,
 #msg-mid-content {
-    color: #002851;
-
+    color: #002851
 }
 
 #msg-bottom-title,
 #msg-bottom-content {
-    color: #fe835e;
+    color: #fe835e
 }
 
-.stores-container{
-    
-    padding-bottom: 100px;
+#img-sunglasses,
+#child-sunglasses,
+#img-eyeglasses {
+    height: 600px
 }
 
-.iframe-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.stores-container {
+    padding-bottom: 100px
 }
 
 iframe {
-    margin: 10px 30px;
-    border: 15px;
-    border-radius: 40px;
+    border: 2px;
+    border-radius: 10px;
+    margin: 10px 20px
 }
 
 #iframe-virtus-olinda-maploc {
-    border-style: solid;
     border-color: #002451;
+    border-style: solid
 }
 
 #iframe-virtus-recife-maploc {
-    border-style: solid;
     border-color: #fe835e;
+    border-style: solid
 }
-.iframe-names{
+
+.iframe-names-content {
+    align-items: center;
+    border-radius: 5px;
     display: flex;
-    flex-direction: row;
+    height: fit-content;
+    height: 25px;
     justify-content: center;
-    align-items: center;
-}
-
-.iframe-names-content{
-    width: 550px;
+    margin: 0 120px;
+    place-items: center;
     text-align: center;
-    margin: 0px 30px;
-    border-radius: 20px;
-    padding: 0 0 50px 0;
-    height: 80px;
-    justify-content: center;
-    align-items: center;
+    width: 160px
 }
 
-.iframe-names-div-recife{
-    background-color: #002451;
+.iframe-names-div-recife {
+    background-color: #002451
 }
 
-.iframe-names-div-olinda{
-    background-color: #fe835e;
+.iframe-names-div-olinda {
+    background-color: #fe835e
 }
 
+#iframe-virtus-recife-maploc,
+#iframe-virtus-olinda-maploc {
+    height: 350px;
+    text-align: center;
+    width: 350px
+}
 
-h3{
-    text-decoration: none;
+h3 {
     font-size: 30px;
-    text-align: center;
     margin: 20px;
-}
-a{
-    text-decoration: none;
-}
-
-#iframe-name-recife{
-    color:#fe835e;
+    text-align: center;
+    text-decoration: none
 }
 
-#iframe-name-olinda{
-    color:#002451;
+a {
+    text-decoration: none
+}
+
+#iframe-name-recife {
+    color: #fe835e;
+    font-size: 20px
+}
+
+#iframe-name-olinda {
+    color: #002451;
+    font-size: 20px
 }
 
 aside {
-    position: fixed;
     bottom: 20px;
-    right: 40px;
-
+    position: fixed;
+    right: 40px
 }
 
 .aside-container {
-    display: flex;
+    display: flex
 }
 
 .contact {
-    margin: 5px;
+    margin: 5px
 }
 
+.header:hover,
+.nav-list:hover,
+.nav-button:hover,
+ul:hover,
+.header-container:hover,
+.header:hover *,
+.nav-list:hover *,
+.nav-button:hover *,
+ul:hover *,
+.header-container:hover * {
+    background-color: #002951;
+    color: #fff
+}
 
+.svg-nav-links:last-child path,
+.svg-nav-links:last-child circle {
+    fill: #002951
+}
 
+.header:hover .svg-nav-links:last-child path,
+.header:hover .svg-nav-links:last-child circle {
+    fill: #fff
+}
 
-@media (min-width: 1600px) {
-    .logo {
-        margin-right: 300px;
+#img-sunglasses,
+#img-eyeglasses {
+    border-bottom-right-radius: 50px
+}
+
+.iframe-container,
+.iframe-names {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+
+@media (max-width: 600px) {
+    .nav-list {
+        backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        background-color: #0029513f;
+        background-color: #0029513f;
+        width: 500px;
+        width: 500px
+    }
+
+    .nav-button {
+        background-color: transparent;
+        border-color: transparent;
+        color: #89c7e3;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        margin: 0 auto;
+        padding: 22px 10px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: ease .6s;
+        width: 400px
+    }
+
+    .nav-button:hover {
+        box-shadow: 400px 0 0 0 inset rgba(240, 248, 255, 0.8);
+        color: #002951
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        right: -500px;
+        top: 0;
+        transition: ease .6s
+    }
+
+    .nav:hover {
+        right: -100px
+    }
+
+    .nav-hide-buttons {
+        background-color: #002951;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        height: 60px;
+        width: 50px
+    }
+
+    .line {
+        background-color: #fe835e;
+        border-radius: 8px;
+        height: 5px;
+        margin: 12px auto;
+        width: 40px
     }
 
     .msg {
-        width: 1000px;
+        border-radius: 0;
+        max-width: 370px;
+        width: fit-content
     }
 
-}
+    #img-sunglasses,
+    #child-sunglasses,
+    #img-eyeglasses {
+        border-radius: 0;
+        height: 555px
+    }
 
-@media (min-width: 2020px) {
+    h2 {
+        font-size: 35px;
+        font-weight: 800;
+        margin: 35px 30px 20px 40px;
+        width: 300px
+    }
+
+    h4 {
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 50px;
+        margin-left: 40px;
+        width: 300px
+    }
+
+    #iframe-virtus-recife-maploc,
+    #iframe-virtus-olinda-maploc {
+        height: 350px;
+        width: 350px
+    }
+
+    .iframe-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center
+    }
+
     .logo {
-        margin-right: 800px;
+        height: fit-content
     }
 
-    .msg {
-        width: 1200px;
+    #logo-virtus {
+        left: 0;
+        width: 200px
     }
 
+    .header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: start
+    }
+
+    #iframe-name-recife {
+        color: #fe835e;
+        font-size: 25px;
+        height: 80px
+    }
+
+    #iframe-name-olinda {
+        color: #002451;
+        font-size: 25px;
+        height: 80px
+    }
+
+    ul {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding-inline-end: 20px;
+        padding-inline-start: 20px
+    }
 }
