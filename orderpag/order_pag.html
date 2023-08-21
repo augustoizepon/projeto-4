@@ -41,59 +41,6 @@
                     <input type="text" id="medic-name" placeholder="Dr.(a)">
                     <button type="button" id="btn-add-medic">Add Dr(a).</button>
                 </div>
-                <div class=" forms-div glasses">
-                    <p>óculos</p><br>
-                    <label for="">Nome do cliente:</label>
-                    <input type="text" name="glasses-client-name" id="glasses-client-name"
-                        placeholder="Nome do cliente"><br>
-                    <label for="">Receituário:</label>
-                    <table>
-                        <tr>
-                            <td></td>
-                            <td>ESF</td>
-                            <td>CIL</td>
-                            <td>EIX</td>
-                            <td>DNP</td>
-                            <td>ALT</td>
-                        </tr>
-                        <tr>
-                            <td>OD</td>
-                            <td><input type="number" class="degree-glasses" id="esferico-od" placeholder="OD ESF"></td>
-                            <td><input type="number" class="degree-glasses" id="cilindrico-od" placeholder="OD CIL">
-                            </td>
-                            <td><input type="number" class="degree-glasses" id="axis-od" placeholder="OD EIXO"></td>
-                            <td><input type="number" class="degree-glasses" id="dnp-od" placeholder="OD DNP"></td>
-                            <td><input type="number" class="degree-glasses" id="height-od" placeholder="OD ALT"></td>
-                        </tr>
-                        <tr>
-                            <td>OE</td>
-                            <td><input type="number" class="degree-glasses" id="esferico-oe" placeholder="OE ESF"></td>
-                            <td><input type="number" class="degree-glasses" id="cilindrico-oe" placeholder="OE CIL">
-                            </td>
-                            <td><input type="number" class="degree-glasses" id="axis-oe" placeholder="OE EIXO"></td>
-                            <td><input type="number" class="degree-glasses" id="dnp-oe" placeholder="OE DNP"></td>
-                            <td><input type="number" class="degree-glasses" id="height-oe" placeholder="OE ALT"></td>
-                        </tr>
-                    </table>
-                    <label for="">Tipo de lente:</label>
-                    <select name="lens-select" id="lens-select">
-                        <option value="0">Lente 1</option>
-                        <option value="1">Lente 2</option>
-                        <option value="2">Lente 3</option>
-                        <option value="3">Lente 4</option>
-                        <option value="4">Lente 5</option>
-                        <option value="5">Lente 6</option>
-                        <option value="6">Lente 7</option>
-                        <option value="7">Lente 8</option>
-                        <option value="8">Lente 9</option>
-                        <option value="9">Lente 10</option>
-                    </select>
-                    <label for="">Armação:</label>
-                    <input type="text" id="frames" placeholder="Referência">
-                    <label for="">Valor:</label>
-                    <input type="number" id="frames-value" placeholder="Valor da Armação">
-                    <input type="text" id="obs-glasses-label" placeholder="OBSERVAÇÃO">
-                </div>
                 <button type="button" id="btn-add-glass-label" class="forms-div">
                     <p>Adicionar novo óculos</p>
                     <p>+</p>
@@ -109,7 +56,7 @@
                         </tr>
                         <tr class="table-values-and-discounts glasses-value">
                             <td>Valor do(s) Óculos:</td>
-                            <td>R$ 0000,00</td>
+                            <td id="price">R$ 0000,00</td>
                         </tr>
                         <tr class="table-values-and-discounts glasses-discount">
                             <td>Desconto:</td>
@@ -117,7 +64,7 @@
                         </tr>
                         <tr class="table-values-and-discounts final-value">
                             <td>Valor Final:</td>
-                            <td>R$ 0000,00</td>
+                            <td id="final-price">R$ 0000,00</td>
                         </tr>
                     </table>
                     <button id="calculate-btn">Calcular</button>
