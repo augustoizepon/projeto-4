@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_order_pag.css">
+    <title>Pedido de Vendas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img id="virtus-logo-img" src="img/virtus_logo_azulmarinho.png" alt="logo-virtus" height="75px">
+            <h1>Pedido de Vendas</h1>
+        </header>
+        <main>
+            <div class="client-info">
+                <div class="forms-div client">
+                    <label for="">Nome:</label>
+                    <input type="text" id="name" placeholder="Nome Completo"><br>
+                    <label for="">CPF:</label>
+                    <input type="number" id="cpf" placeholder="CPF">
+                    <label for="">Data de nascimento:</label>
+                    <input type="date" id="birth" placeholder="Data de nascimento">
+                    <label for="">Telefone:</label>
+                    <input type="tel" id="phone" required placeholder="Telefone">
+                    <label for="">Endereço:</label>
+                    <input type="text" id="address" placeholder="Endereço">
+                    <input type="number" id="residencial-number" placeholder="Número">
+                    <input type="text" id="bairro" placeholder="Bairro">
+                    <input type="text" id="city" placeholder="Cidade">
+                    <input type="text" id="state" placeholder="Estado">
+                    <input type="text" id="CEP" placeholder="CEP">
+                    <label for="">Médico:</label>
+                    <input type="text" id="medic-name" placeholder="Dr.(a)">
+                    <button type="button" id="btn-add-medic">Add Dr(a).</button>
+                </div>
+                <button type="button" id="btn-add-glass-label" class="forms-div">
+                    <p>Adicionar novo óculos</p>
+                    <p>+</p>
+                </button>
+                <div class="forms-div value-and-discount">
+                    <p>Pagamento</p>
+                    <br><br><br>
+                    <label for="">Valores e Descontos:</label>
+                    <table>
+                        <tr class="table-values-and-discounts values">
+                            <td></td>
+                            <td>Valores</td>
+                        </tr>
+                        <tr class="table-values-and-discounts glasses-value">
+                            <td>Valor do(s) Óculos:</td>
+                            <td id="price">R$ 0000,00</td>
+                        </tr>
+                        <tr class="table-values-and-discounts glasses-discount">
+                            <td>Desconto:</td>
+                            <td><input type="number" id="discount" placeholder="Desconto"></td>
+                        </tr>
+                        <tr class="table-values-and-discounts final-value">
+                            <td>Valor Final:</td>
+                            <td id="final-price">R$ 0000,00</td>
+                        </tr>
+                    </table>
+                    <button id="calculate-btn">Calcular</button>
+                    <label>Forma de pagamento:</label>
+                    <select name="paym" id="payment-method">
+                        <option value="creditario">Crediário</option>
+                        <option value="cartao-de-credito">Cartão de crédito</option>
+                        <option value="cartao-de-debito">Cartão de débito</option>
+                        <option value="Pix">Pix</option>
+                        <option value="Especie">Espécie</option>
+                    </select><br>
+                    <label for="">Valor pago:</label>
+                    <input type="number" placeholder="Valor pago" id="value-check">
+                </div>
+
+                <div class="forms-div client-sign">
+                    <label for="">Assinatura do Cliente:</label>
+                    <div id="canvas-div">
+                        <canvas id="canvas" width="300" height="150" style="border:1px solid #002952;"></canvas>
+                    </div>
+                    <button onclick="limparCanvas()" id="clear-sign">Limpar</button>
+
+                    <button onclick="salvarAssinatura()" id="save-sign">Salvar Assinatura</button>
+
+                    <p id="document-paragraph">Documento com foto(RG ou CNH)</p>
+
+                    <label for="">frente:</label>
+                    <input id="front-document" type="file" accept=".jpg, .jpeg, .png">
+
+                    <label for="">verso:</label>
+                    <input id="back-document" type="file" accept=".jpg, .jpeg, .png">
+                </div>
+
+                <button id="send" class="forms-div">Enviar pedido</button>
+            </div>
+        </main>
+    </div>
+    <script src="order_pag.js">
+
+
+    </script>
+</body>
+
+</html>

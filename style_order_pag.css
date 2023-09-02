@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    background-color: #fea580;
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+.container {
+    justify-content: center;
+    width: 400px;
+    height: fit-content;
+    padding: 30px 0;
+    margin: 40px auto;
+    background-color: #ebebeb;
+    border: 1px solid #fe835e;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #fe835e;
+    color: #005c85;
+
+}
+
+header {
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#virtus-logo-img {
+    align-items: center;
+
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+
+.client-info {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.forms-div {
+    padding: 20px;
+    min-width: 350px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 25px 25px;
+    height: 550px;
+    border: 0;
+}
+
+label{
+    color: white;
+}
+
+.client {
+    background-color: #002952;
+    box-shadow: 0 0 20px #002952;
+}
+
+#btn-add-medic{
+    border: 3px solid #fe835e;
+    background-color: #002952;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+#btn-add-medic:active{
+    background-color: #fe835e;
+}
+
+.glasses {
+    background-color: #fe835e;
+    box-shadow: 0 0 20px #fe835e;
+}
+
+.value-and-discount {
+    background-color: #89c7e3;
+    box-shadow: 0 0 20px #89c7e3;
+}
+
+.client-sign {
+    background-color: #005c85;
+    box-shadow: 0 0 20px #005c85;
+}
+
+.degree-glasses {
+    width: 40px;
+
+}
+
+input {
+    border-radius: 5px;
+    margin: 5px 0;
+    border: 0;
+    outline: none;
+}
+
+input[type = "number"]::-webkit-outer-spin-button,
+input[type = "number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+select {
+    border: 1px #fe835e;
+    border-radius: 5px;
+    outline: none;
+    height: 20px;
+    font-size: 15px;
+}
+
+#btn-add-glass-label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    align-items: center;
+    background-color: #fe835e;
+    box-shadow: 0 0 20px #fe835e;
+    border: 5px solid #002952;
+}
+
+p{
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    color: white;
+}
+#document-paragraph{
+    font-size: 20px;
+}
+
+#send{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    align-items: center;
+    background-color: #fe835e;
+    box-shadow: 0 0 20px #fe835e;
+    border: 5px solid #002952;
+    color: white;
+    font-size: 50px;
+}
+
+#clear-sign, #save-sign, #front-document, #back-document{
+    border: 3px solid #fe835e;
+    background-color: #005c85;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin: 5px 0;
+    cursor:pointer;
+}
+
+#calculate-btn{
+    border: 3px solid #fe835e;
+    background-color: #89c7e3;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin: 5px 0;
+    cursor:pointer;
+}
+
+#clear-sign:active, #save-sign:active{
+    background-color: #fe835e;
+}
+
+#canvas-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: white;
+}
+
+#canvas, #canvas-div{
+    border-radius: 10px;
+}
